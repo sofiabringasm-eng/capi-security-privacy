@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Capi Security</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #6D4C41;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #FF6F00;
+            padding-bottom: 15px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #8D6E63;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #FFF3E0;
+            padding: 20px;
+            border-left: 4px solid #FF6F00;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .contact {
+            background: #EFEBE9;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .contact h3 {
+            color: #6D4C41;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #FF6F00;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦫 Política de Privacidad - Capi Security</h1>
+        <p class="last-updated"><strong>Última actualización:</strong> Noviembre 2024</p>
+        
+        <div class="highlight">
+            <strong>Resumen:</strong> Capi Security NO recopila, transmite ni comparte ninguna información personal. Todos los datos se almacenan localmente en tu dispositivo y nunca salen de él.
+        </div>
+
+        <h2>1. Información que Recopilamos</h2>
+        <p>Capi Security es una extensión de navegador que funciona completamente de manera local. <strong>NO recopilamos ningún dato personal</strong> ni enviamos información a servidores externos.</p>
+
+        <h2>2. Datos Almacenados Localmente</h2>
+        <p>La extensión almacena los siguientes datos únicamente en tu dispositivo local mediante la API de almacenamiento de Chrome (<code>chrome.storage.local</code>):</p>
+        <ul>
+            <li><strong>Perfiles de usuario:</strong> Nombres, edades y configuraciones personalizadas para cada perfil familiar</li>
+            <li><strong>Listas de sitios web:</strong> URLs bloqueadas y recomendadas configuradas por el administrador</li>
+            <li><strong>Historial de accesos:</strong> Registro de intentos de acceso a sitios bloqueados (solo para estadísticas locales)</li>
+            <li><strong>Credenciales de administrador:</strong> Email y contraseña hasheada (SHA-256) para proteger la configuración</li>
+            <li><strong>Preferencias:</strong> Configuraciones de horarios, bloqueos temporales y otras opciones</li>
+        </ul>
+
+        <h2>3. Uso de los Datos</h2>
+        <p>Los datos almacenados localmente se utilizan exclusivamente para:</p>
+        <ul>
+            <li>Proporcionar funcionalidades de control parental y filtrado de contenido</li>
+            <li>Gestionar múltiples perfiles familiares con configuraciones personalizadas</li>
+            <li>Mostrar estadísticas de uso al administrador (padre/tutor)</li>
+            <li>Proteger las configuraciones mediante autenticación con contraseña</li>
+        </ul>
+
+        <h2>4. Compartir Información</h2>
+        <p><strong>NO compartimos ninguna información con terceros.</strong> Capi Security no tiene servidores backend ni envía datos a ningún servicio externo. Todo permanece en tu dispositivo.</p>
+
+        <h2>5. Permisos de la Extensión</h2>
+        <p>Capi Security requiere los siguientes permisos de Chrome, utilizados únicamente para las funcionalidades descritas:</p>
+        <ul>
+            <li><strong>storage:</strong> Para guardar configuraciones y perfiles localmente en tu dispositivo</li>
+            <li><strong>tabs:</strong> Para detectar qué páginas web se están visitando y aplicar los filtros configurados</li>
+            <li><strong>declarativeNetRequest:</strong> Para bloquear el acceso a sitios web según las reglas configuradas</li>
+            <li><strong>alarms:</strong> Para gestionar temporizadores de bloqueo temporal</li>
+            <li><strong>notifications:</strong> Para mostrar notificaciones sobre cambios de perfil y eventos importantes</li>
+        </ul>
+
+        <h2>6. Seguridad</h2>
+        <p>Tomamos medidas para proteger tus datos locales:</p>
+        <ul>
+            <li>Las contraseñas se almacenan utilizando hash SHA-256 (no en texto plano)</li>
+            <li>Los datos solo son accesibles desde tu navegador Chrome</li>
+            <li>No hay transmisión de datos a servidores externos</li>
+        </ul>
+        
+        <div class="highlight">
+            <strong>Nota importante:</strong> El hash SHA-256 básico es adecuado para protección en entornos familiares. Para entornos de alta seguridad, se recomienda usar métodos más robustos. Esta extensión está diseñada para uso familiar doméstico.
+        </div>
+
+        <h2>7. Cookies y Rastreo</h2>
+        <p>Capi Security <strong>NO utiliza cookies</strong> ni ninguna tecnología de rastreo. No monitoreamos tu actividad de navegación más allá de aplicar los filtros configurados.</p>
+
+        <h2>8. Servicios de Terceros</h2>
+        <p>La extensión utiliza la fuente Google Fonts (Poppins) para mejorar la apariencia de la interfaz. Esta es la única conexión externa y es opcional. Si no tienes conexión a internet, la extensión funcionará con fuentes predeterminadas del sistema.</p>
+
+        <h2>9. Derechos del Usuario</h2>
+        <p>Como usuario de Capi Security, tienes los siguientes derechos:</p>
+        <ul>
+            <li><strong>Acceso:</strong> Puedes ver todos tus datos almacenados desde la interfaz de la extensión</li>
+            <li><strong>Modificación:</strong> Puedes editar o eliminar perfiles y configuraciones en cualquier momento</li>
+            <li><strong>Eliminación:</strong> Puedes borrar todos los datos de dos formas:
+                <ul>
+                    <li>Desde <code>chrome://extensions/</code> → Detalles de Capi Security → "Borrar datos de almacenamiento"</li>
+                    <li>Desinstalando la extensión (elimina automáticamente todos los datos)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>10. Menores de Edad</h2>
+        <p>Capi Security está diseñada para que los padres o tutores supervisen la navegación de menores. La extensión no recopila intencionalmente información de menores de 13 años. Los padres son responsables de:</p>
+        <ul>
+            <li>Configurar y gestionar los perfiles de sus hijos</li>
+            <li>Establecer filtros apropiados según la edad</li>
+            <li>Supervisar el uso de la extensión</li>
+        </ul>
+
+        <h2>11. Cambios a esta Política</h2>
+        <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Los cambios se publicarán en esta página con una nueva fecha de "Última actualización". Te recomendamos revisar esta política periódicamente.</p>
+
+        <h2>12. Jurisdicción</h2>
+        <p>Esta extensión cumple con las leyes de privacidad aplicables. Al ser un producto que funciona completamente de manera local sin recopilación de datos, no está sujeto a regulaciones como GDPR o CCPA respecto a procesamiento de datos personales.</p>
+
+        <h2>13. Responsabilidad</h2>
+        <p>Capi Security es una herramienta de asistencia para la supervisión familiar. Los padres y tutores son los únicos responsables de:</p>
+        <ul>
+            <li>Configurar apropiadamente los filtros de contenido</li>
+            <li>Supervisar el uso de internet por parte de los menores</li>
+            <li>Mantener la seguridad de las credenciales de administrador</li>
+        </ul>
+        <p>La extensión no garantiza el bloqueo del 100% del contenido inapropiado y debe usarse como parte de una estrategia integral de supervisión parental.</p>
+
+        <div class="contact">
+            <h3>📞 Contacto</h3>
+            <p>Si tienes preguntas o inquietudes sobre esta Política de Privacidad o sobre Capi Security, puedes contactarnos:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:capisecuritype@gmail.com">capisecuritype@gmail.com</a><br>
+                <strong>Teléfono:</strong> 938 748 293
+            </p>
+            <p>Responderemos a tus consultas en un plazo de 48 horas.</p>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #EFEBE9;">
+
+        <p style="text-align: center; color: #666; font-size: 0.9rem;">
+            <strong>Capi Security</strong> - Herramienta de supervisión familiar<br>
+            Versión 1.0.0 | Noviembre 2024
+        </p>
+    </div>
+</body>
+</html>
